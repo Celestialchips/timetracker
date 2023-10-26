@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Pomodoro Timer</h1>
+    <div id="timer">
+        25:00
+    </div>
+    <button id="start" onclick="startTimer()">Start</button>
+    <button id="pause" onclick="pauseTimer()">Pause</button>
+    <button id="reset" onclick="resetTimer()">Reset</button>
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+</body>
+</html>
